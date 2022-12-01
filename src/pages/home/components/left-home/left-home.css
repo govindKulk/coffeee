@@ -1,0 +1,28 @@
+.container .text {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    padding: 4px 13px;
+    background-color: var(--card-bg);
+    /* border: 1px solid black; */
+
+}
+
+.container .text .heading {
+    margin-bottom: 14px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.container .text .quote {
+    background-color: var(--quote-bg);
+    color: white;
+    font-style: italic;
+    padding: 8px;
+    font-size: 22px;
+    border-radius: 8px;
+}
+
+.container .text .text-para {
+    line-height: 30px;
+    font-weight: var(--fw-reg);
+    font-size: 20px;
+}

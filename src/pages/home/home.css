@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+
+
+}
+
+.container .heading {
+	background-color: var(--dk-green);
+	color: white;
+}

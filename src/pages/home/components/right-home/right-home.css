@@ -1,0 +1,30 @@
+.news-events {
+    /* grid-column: 4; */
+    /* border: 1px solid black; */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    background-color: var(--card-bg);
+
+}
+
+.news-events .heading h1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.news-events .news-list {
+    padding: 0;
+    font-weight: var(--fw-reg);
+}
+
+.news-events .news-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+
+marquee p img {
+    width: 50px;
+}
+.upcoming marquee {
+	text-align: center;
+}

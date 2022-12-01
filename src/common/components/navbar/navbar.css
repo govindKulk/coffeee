@@ -1,0 +1,138 @@
+/* styling navbar  */
+
+.navbar .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 12px;
+}
+
+.navbar .nav-list .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    border-radius: 10px;
+    padding: 6px;
+    /* border: 1px solid white; */
+}
+
+.navbar .nav-list .nav-item .nav-link:hover {
+   
+    color: #77f9ed;
+    transition: all 0.7s ease;
+}
+
+/* .active-nav { */
+	/* background-color: white; */
+	/* color: #77f9ed;
+	text-decoration: none;
+	font-size: 22px;
+	border-radius: 0;
+	padding: 6px;
+	border: 1px solid white;
+     */
+/* } */
+
+.navbar .nav-list .nav-item {
+
+    padding: 5px;
+    /* width: 10vw; */
+}
+
+.navbar {
+    background-color: var(--clr-primary);
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+
+/* media queries  */
+
+@media only screen and (max-width: 768px){
+    .nav-item {
+        padding: 0 12px;
+        margin: 0;
+        border-bottom: solid 2px grey;
+        width: 100%;
+        /* align-self: flex-end; */
+        text-align: left;
+        /* border-top: solid 1px grey; */
+        /* border: solid 1px #a8a8a8; */
+        padding: 8px 0;
+    }
+    
+    .mobile-nav-list a {
+        text-decoration: none;
+        font-size: 22px;
+        color: #f9f9f9;
+        /* border-radius: 10px; */
+        /* padding: 2px 0; */
+        /* font-family: 'Monteserrat'; */
+        /* margin-bottom: 12px; */
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        display: block;
+    }
+    
+    .mobile-nav-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 12px;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .mobile-navbar {
+        background: #8b4812;
+        padding: 8px 12px;
+    }
+    
+    .display-none {
+        display: none;
+    }
+    
+    .open-btn,
+    .close-btn {
+        color: white;
+    }
+    
+    .open-btn:hover,
+    .close-btn:hover {
+    
+        background-color: rgb(97, 70, 18);
+        transition: all 1s ease;
+    }
+    
+    .ham {
+        display: inline-block;
+    }
+    
+    .mobile-nav-list a {
+        text-decoration: none;
+        font-size: 22px;
+        color: white;
+        border-radius: 10px;
+        padding: 6px;
+    
+    }
+    
+    .mobile-nav-list a:hover {
+        background-color: white;
+        color: var(--clr-primary);
+        transition: all 0.7s ease;
+    }
+}

@@ -1,0 +1,40 @@
+  .video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(33vw - 20px*3);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
+    padding: 8px 16px;
+    position: relative;
+}
+
+  .video h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 1000;
+}
+
+  .video p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+}
+
+
+  .video .video-frame {
+    width: 100%;
+}
+
+
+
+  .video .video-frame iframe {
+    width: 100%;
+
+
+}
+
+.video:hover {
+    background-color: #a9c7e1;
+    transition: all 0.5s ease;
+}

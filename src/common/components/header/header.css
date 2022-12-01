@@ -1,0 +1,159 @@
+/* global styles */
+
+:root {
+    /* colors  */
+    --clr-primary: #8b4812;
+    --clr-light: white;
+    --clr-dark: black;
+    --dk-green: #1c6102;
+    --lt-green: #6ca32c;
+    --quote-bg: #b68a21;
+    --card-bg: #dbd6b6;
+
+    /* font weight  */
+    --fw-reg: 400;
+    --fw-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* styling supports section  */
+.support {
+    background-color: var(--clr-primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    font-size: 17px;
+
+}
+
+.support>.contacts {
+    display: flex;
+    gap: 40px;
+    margin-left: 1rem;
+}
+
+.support .contacts .mail-link {
+    margin-right: 8px;
+}
+
+.support .contacts a {
+    color: white;
+
+}
+
+.support .contacts a:hover {
+    color: red;
+}
+
+.support .donate .donate-btn {
+    border: none;
+    outline: none;
+    background-color: var(--clr-light);
+    font-size: 20px;
+    padding: 8px;
+    color: var(--clr-primary);
+    width: 20vw;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.support .donate .donate-btn:hover {
+    background-color: black;
+    color: aqua;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.mobile-support {
+    display: none;
+}
+
+
+
+
+
+/* styling header  */
+.header .nav-brand img {
+    width: 150px;
+    border-radius: 9%;
+}
+
+.header {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    isolation: isolate;
+    background-image: url('/public/img/Gallery Images/01.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: white;
+    /* text-transform: capitalize; */
+    padding: 2rem 0.6rem;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(102, 94, 94);
+    z-index: -1;
+    opacity: 0.5;
+}
+.header .nav-text {
+	text-transform: uppercase;
+	font-size: 22px;
+	text-shadow: 0px 2px 0px rgb(26, 26, 26);
+	/* color: #.tagline \{ font-size: 15px; */
+	color: #00ffdb;
+	font-weight: 900;
+	font-family: 'Montserrat', sans-serif;
+	/* font-style: italic; */
+	/* line-height: 1.3; */
+	/* text-shadow: 0 0 30px rgb(255, 255, 255); */
+	/* font-family: 'sans-serif'; */
+	word-break: keep-all;
+	/* word-wrap: ; */
+}
+
+
+.header .nav-text {
+    grid-column: 3/12;
+    text-transform: uppercase;
+    /* font-size: 27px; */
+    /* text-shadow: 0 0 30px rgb(0, 0, 0.3);
+    /* color: #eaeaea; */
+    /* font-family: 'sans-serif'; */
+}
+
+.tagline {
+	font-size: 15px;
+	color: #baff94;
+	font-weight: 900;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	line-height: 1.3;
+	/* word-spacing: 5px; */
+	text-shadow: 0 0 30px rgb(255, 255, 255);
+}
